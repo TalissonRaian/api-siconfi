@@ -80,7 +80,7 @@ username = os.getenv('USERNAME', '')
 password = os.getenv('PASSWORD', '')  
 driver = 'ODBC Driver 17 for SQL Server'
 # String de conexão para SQLAlchemy
-conn_str = f"mssql+pyodbc://{server}:1433/{database}?driver=ODBC Driver 17 for SQL Server&trusted_connection=yes;"
+conn_str = f"mssql+pyodbc://{server}:0000/{database}?driver=ODBC Driver 17 for SQL Server&trusted_connection=yes;"
 engine = create_engine(conn_str)
 
 connection= engine.connect()
